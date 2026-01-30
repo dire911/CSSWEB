@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "CSSwebsite",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CSSwebsite"
+	}
+}
