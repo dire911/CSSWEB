@@ -8,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
 <body>
     <section class="header">
         <nav class="navbar">
             <a href="index.html"><img src="imagescss/logo.png" alt="css logo"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
@@ -21,6 +23,7 @@
                     <li><a href="">Join Us!</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
     <div class="text-box">
@@ -32,6 +35,59 @@
         <a href="" class="hero-btn">More on Us</a>
     </div>
     </section>
+
+    <!--Eboard-->
+
+    <section class="eboard">
+        <h1> Meet our Eboard! </h1>
+        <p> We have: Jelani:President, Jonathan:Vice President, Paul:Tresarure, Dom:Pr, Jared:Pr </p>
+        
+        <div class="row">
+            <div class="eboard-col">
+                <h3> Jelani </h3>
+                <p>Meet our president Jelani: A senior Computer Science Student</p>
+            </div>
+
+        <div class="row">
+            <div class="eboard-col">
+                <h3> Jonathan </h3>
+                <p>Meet our president Jelani: A senior Computer Science Student</p>
+            </div>
+            
+        <div class="row">
+            <div class="eboard-col">
+                <h3> Jared </h3>
+                <p>Meet our president Jelani: A senior Computer Science Student</p>
+            </div>
+
+        <div class="row">
+            <div class="eboard-col">
+                <h3> Dom </h3>
+                <p>Meet our president Jelani: A senior Computer Science Student</p>
+            </div>
+
+        <div class="row">
+                <div class="eboard-col">
+                <h3> Paul </h3>
+                <p>Meet our president Jelani: A senior Computer Science Student</p>
+            </div>
+
+        </div>
+
+    </section>
+
+<!--Java script for toggle menu-->
+    <script>
+        
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.stlye.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
     
 </body>
 </html>
