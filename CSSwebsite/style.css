@@ -9,6 +9,7 @@
 
 html {
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 .header{
     min-height: 100vh;
@@ -29,7 +30,9 @@ nav{
     align-items: center;
 }
 nav img{
-    width: 130px;
+    width: 170px;
+    border-radius: 90px;
+    transform: translate(-60px, -10px);
 }
 
 .nav-links{
@@ -154,18 +157,23 @@ p{
 }
 
 .row{
+    display: flex;
     margin: 5%;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+
 
 }
 .eboard-col{
-    flex-basis: 31%;
+    flex-basis: 30%;
     background: #fff3f3;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
+    text-align: center;
 }
 h3{
     text-align: center;
@@ -176,4 +184,9 @@ h3{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
+@media(max-width: 700px){
+    .eboard-col{
+        flex-basis: 100%;
+    }
+}
 

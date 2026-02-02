@@ -1,93 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Science Society</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Computer Science Society</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome (better CDN link) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
 <body>
-    <section class="header">
-        <nav class="navbar">
-            <a href="index.html"><img src="imagescss/logo.png" alt="css logo"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Eboard</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Join Us!</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
+
+  <section class="header" id="home">
+
+    <nav class="navbar">
+      <a href="index.html">
+        <img src="imagescss/logo.png" alt="CSS logo" />
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#eboard">Eboard</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#join">Join Us!</a></li>
+        </ul>
+      </div>
+
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
 
     <div class="text-box">
-        <h1>Computer Science Society</h1>
-        <p>A diverse and inclusive student led club at Willian Paterson University <br>focused on
-            Ai generation, programming, computers, and technology.
-        </p>
-        <br>
-        <a href="" class="hero-btn">More on Us</a>
+      <h1>Computer Science Society</h1>
+
+      <p>
+        A diverse and inclusive student-led club at William Paterson University<br />
+        focused on AI generation, programming, computers, and technology.
+      </p>
+
+      <a href="#about" class="hero-btn">More on Us</a>
     </div>
-    </section>
 
-    <!--Eboard-->
+  </section>
 
-    <section class="eboard">
-        <h1> Meet our Eboard! </h1>
-        <p> We have: Jelani:President, Jonathan:Vice President, Paul:Tresarure, Dom:Pr, Jared:Pr </p>
-        
-        <div class="row">
-            <div class="eboard-col">
-                <h3> Jelani </h3>
-                <p>Meet our president Jelani: A senior Computer Science Student</p>
-            </div>
+  <!-- About (placeholder section so links work) -->
+  <section id="about">
+    <!-- Add your About content here -->
+  </section>
 
-        <div class="row">
-            <div class="eboard-col">
-                <h3> Jonathan </h3>
-                <p>Meet our president Jelani: A senior Computer Science Student</p>
-            </div>
-            
-        <div class="row">
-            <div class="eboard-col">
-                <h3> Jared </h3>
-                <p>Meet our president Jelani: A senior Computer Science Student</p>
-            </div>
+  <!-- Eboard -->
+  <section class="eboard" id="eboard">
 
-        <div class="row">
-            <div class="eboard-col">
-                <h3> Dom </h3>
-                <p>Meet our president Jelani: A senior Computer Science Student</p>
-            </div>
+    <h1>Meet our Eboard!</h1>
 
-        <div class="row">
-                <div class="eboard-col">
-                <h3> Paul </h3>
-                <p>Meet our president Jelani: A senior Computer Science Student</p>
-            </div>
+    <div class="row">
 
-        </div>
+      <div class="eboard-col">
+        <h3>Jelani</h3>
+        <p>Meet our President Jelani — a senior Computer Science student.</p>
+      </div>
 
-    </section>
+      <div class="eboard-col">
+        <h3>Jonathan</h3>
+        <p>Meet our Vice President Jonathan.</p>
+      </div>
 
-<!--Java script for toggle menu-->
-    <script>
-        
-        var navLinks = document.getElementById("navLinks");
+      <div class="eboard-col">
+        <h3>Jared</h3>
+        <p>Meet Jared — PR for the Computer Science Society.</p>
+      </div>
 
-        function showMenu(){
-            navLinks.stlye.right = "0";
-        }
-        function hideMenu(){
-            navLinks.style.right = "-200px";
-        }
-    </script>
-    
+      <div class="eboard-col">
+        <h3>Dom</h3>
+        <p>Meet Dom — PR for the Computer Science Society.</p>
+      </div>
+
+      <div class="eboard-col">
+        <h3>Paul</h3>
+        <p>Meet Paul — Treasurer of the Computer Science Society.</p>
+      </div>
+
+      <div class="eboard-col">
+        <h3>Dr. Wang</h3>
+        <p>Meet our club advisor from the Computer Science department.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact (placeholder section so links work) -->
+  <section id="contact">
+    <!-- Add your Contact content here -->
+  </section>
+
+  <!-- Join (placeholder section so links work) -->
+  <section id="join">
+    <!-- Add your Join content here -->
+  </section>
+
+  <!-- JavaScript (inline) -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+  <!-- If you prefer an external file instead, delete the inline script above and use:
+  <script src="script.js"></script>
+  -->
+
 </body>
+
 </html>
